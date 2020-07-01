@@ -38,34 +38,32 @@ git commit -m '提交消息'
 ```
 
 - 查看提交历史  
-1.Git的提交(commit id)是一个在摘要值。这个摘要值实际是sha1计算出来的
+1. Git的提交(commit id)是一个在摘要值。这个摘要值实际是sha1计算出来的
 ```
 git log
 ```
 
-- 配置信息
-1.对于user.name和user.email来说，有三个地方可以设置
-- /etc/gitconfig(几乎不会使用)
+- 配置信息  
+1. 对于user.name和user.email来说，有三个地方可以设置
 ```
+/etc/gitconfig(几乎不会使用)
 git config --system
-```
-- ~/.gitconfig(很常用) # 针对用户(优先级其次)
-```
+
+~/.gitconfig(很常用) # 针对用户(优先级其次)
 git config --global
-```
-- .git/config # 针对于特定项目的(优先级最高)
-```
+
+.git/config # 针对于特定项目的(优先级最高)
 git config --local
 ```
-2.查看配置信息
+2. 查看配置信息
 ```
 git config --list
 ```
-3.删除配置信息
+3. 删除配置信息
 ```
 git config --local --unset user.name # 针对特定项目的
 ```
-4.查看配置文件
+4. 查看配置文件
 ```
 cat config # 查看针对特定项目的配置信息文件
 cat ~/.gitconfig # 查看针对用户的配置信息文件
@@ -87,4 +85,13 @@ echo 'weclome' >> file
 ```
 git reset HEAD file
 ```
+
+
+
+
+
+
+
+
+
 
