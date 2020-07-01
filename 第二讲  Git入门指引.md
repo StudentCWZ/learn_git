@@ -42,35 +42,35 @@
 
 
 ## Git的工作模式
-- 版本库初始化
-1.个人计算机从版本服务器同步
-- 操作
-1.90%以上的操作在个人计算机上
-2.添加文件
-3.修改文件
-4.提交变更
-5.查看版本历史等
-- 版本库同步
-1.将本地修改推送到版本服务器
+- 版本库初始化   
+1. 个人计算机从版本服务器同步
+- 操作  
+1. 90%以上的操作在个人计算机上  
+2. 添加文件  
+3. 修改文件  
+4. 提交变更  
+5. 查看版本历史等  
+- 版本库同步  
+1. 将本地修改推送到版本服务器
 
 ## Git基础
 - 直接记录快照，而非差异比较
 - 近乎所有操作都在本地执行
 - 时刻保持数据完整性
 - 多数操作仅添加操作
-- 文件的三种状态
-1.已修改(modified)
-2.已暂存(staged)
-3.已提交(committed)
+- 文件的三种状态  
+1. 已修改(modified)  
+2. 已暂存(staged)  
+3. 已提交(committed)  
 
 ## Git文件状态
-- Git文件
+- Git文件  
 已被版本库管理的文件
-- 已修改
+- 已修改  
 在工作目录修改Git文件
-- 已暂存
+- 已暂存  
 对已修改的文件执行Git暂存操作，将文件存入暂存区
-- 已提交
+- 已提交  
 将已暂存的文件执行Git提交操作，将文件存入版本库
 
 ## Git安装
@@ -79,8 +79,8 @@
 sudo apt-get install git
 ```
 - Mac  
-1.安装命令行工具(如已安装Xcode，命令行工具会在首次启动Xcode时提示安装)  
-2.homebrew
+1. 安装命令行工具(如已安装Xcode，命令行工具会在首次启动Xcode时提示安装)  
+2. homebrew
 - 安装homebrew
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -89,12 +89,12 @@ sudo apt-get install git
 ```
 brew help
 ```
-3.macports
-- Windows
-1.通过msysGit(http://code.google.com/p/msysgit)。  
-2.完成安装之后，就可以使用命令行的git工具(已经自带了ssh客户端)了，另外还有一个图形界面的Git项目管理工具。  
-3.建议使用Git命令行，方便又快捷，GUI反而繁琐。  
-4.如果需要使用GUI，推荐使用SourceTree，拥有Mac与Windows版本；此外，Windows下还可以使用TortoiseGit。
+3. macports
+- Windows  
+1. 通过msysGit(http://code.google.com/p/msysgit)。  
+2. 完成安装之后，就可以使用命令行的git工具(已经自带了ssh客户端)了，另外还有一个图形界面的Git项目管理工具。  
+3. 建议使用Git命令行，方便又快捷，GUI反而繁琐。  
+4. 如果需要使用GUI，推荐使用SourceTree，拥有Mac与Windows版本；此外，Windows下还可以使用TortoiseGit。
 
 
 ## Git常用命令
