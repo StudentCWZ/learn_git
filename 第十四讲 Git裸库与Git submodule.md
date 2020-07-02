@@ -1,6 +1,6 @@
 # 第十四讲 Git裸库与Git submodule
 ## Git裸库
-没有工作区的Git仓库(一般在服务器端)
+- 没有工作区的Git仓库(一般在服务器端)
 - 创建裸库命令
 ```
 git init --bare # 没有工作区
@@ -8,20 +8,20 @@ git init --bare # 没有工作区
 ## Git submodule
 项目的相互协作(多模块开发-项目的依赖)
 - 举例
--- 准备工作  
-1.在GitHub上创建仓库git_parent和git_children  
-2.在本地创建仓库git_parent和git_children  
-3.在本地创建的仓库git_parent新建文件parent.txt,将修改纳入暂存区，并进行提交  
-4.配置远程仓库git_parent信息  
-5.将本地的git_parent提交推送到远程git_parent  
-6.在本地创建的仓库git_children新建submodule.txt，将修改纳入暂存区，并进行提交  
-7.配置远程仓库git_children信息  
-8.将本地的git_children提交推送到远程git_children  
-9.在本地创建的仓库git_childern新建hello.txt，将修改纳入暂存区，并进行提交  
-10.将本地的git_children提交推送到远程git_children  
-11.执行git submodule命令，将子依赖拉到主项目  
-12.将文件修改纳入暂存区，接着进行提交    
-13.如果git_childern发生变化，git_parent也随之变化 
+- 准备工作  
+1. 在GitHub上创建仓库git_parent和git_children  
+2. 在本地创建仓库git_parent和git_children  
+3. 在本地创建的仓库git_parent新建文件parent.txt,将修改纳入暂存区，并进行提交  
+4. 配置远程仓库git_parent信息  
+5. 将本地的git_parent提交推送到远程git_parent  
+6. 在本地创建的仓库git_children新建submodule.txt，将修改纳入暂存区，并进行提交  
+7. 配置远程仓库git_children信息  
+8. 将本地的git_children提交推送到远程git_children  
+9. 在本地创建的仓库git_childern新建hello.txt，将修改纳入暂存区，并进行提交  
+10. 将本地的git_children提交推送到远程git_children  
+11. 执行git submodule命令，将子依赖拉到主项目  
+12. 将文件修改纳入暂存区，接着进行提交    
+13. 如果git_childern发生变化，git_parent也随之变化 
 - git submodule命令
 ```
 git submodule git@github.com:gitlecture/git_children.git my module
