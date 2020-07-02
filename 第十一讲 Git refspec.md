@@ -39,16 +39,16 @@ git push origin :branch_name # 将本地的一个空分支推送到远程某个�
 git push origin --delete branch_name # 与上一个命令一样效果
 ```
 - 重命名远程分支(步骤)  
-1.删除远程分支  
-2.本地重命名分支  
-3.将本地重命名后的分支推送到远程
+1. 删除远程分支  
+2. 本地重命名分支  
+3. 将本地重命名后的分支推送到远程
 
 ### HEAD文件相关内容
 - HEAD标记  
-1.HEAD文件是一个指向你当前所在分支的引用标识符，该文件内部并不包含SHA-1值，而是包含一个指向另外一个引用的指针。  
-2.当执行git commit命令时，git会创建一个commit对象，并且将这个commit对象的parent指针设置为HEAD所指向的引用的SHA-1值。  
-3.我们对于HEAD修改的任何操作都会被git reflog完整记录下来。  
-4.实际上，我们可以通过对git底层命令symboic-ref来实现对HEAD文件内容的修改。
+1. HEAD文件是一个指向你当前所在分支的引用标识符，该文件内部并不包含SHA-1值，而是包含一个指向另外一个引用的指针。  
+2. 当执行git commit命令时，git会创建一个commit对象，并且将这个commit对象的parent指针设置为HEAD所指向的引用的SHA-1值。  
+3. 我们对于HEAD修改的任何操作都会被git reflog完整记录下来。  
+4. 实际上，我们可以通过对git底层命令symboic-ref来实现对HEAD文件内容的修改。
 ```
 git symbolic-ref HEAD # 读取
 git symbolic-ref HEAD refs/heads/branch_name # 写入
