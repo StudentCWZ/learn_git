@@ -18,7 +18,7 @@ git checkout -b new_branch # 创建分支并切换分支
 ```
 git checkout commit_id # 此时指针处于游离状态
 ```
-接着利用下一命令可以将游离的指针，移到创建分支
+- 接着利用下一命令可以将游离的指针，移到创建分支
 ```
 git checkout -b new_branch 
 ```
