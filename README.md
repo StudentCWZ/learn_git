@@ -1,4 +1,4 @@
-# learn_git
+# Learn_git
 ## Learn and apply Git
 ### Course content
 - Git official website: http://www.git-scm.com/
